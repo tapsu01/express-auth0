@@ -1,0 +1,23 @@
+{
+  "name": "whatabyte-portal",
+  "version": "0.1.0",
+  "description": "Authentication use expressjs and auth0",
+  "main": "app.js",
+  "author": "Nguyen Tu<nguyentudevp@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "ci": "git-cz",
+    "commit": "git-cz",
+    "ui": "browser-sync start --config bs-config.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "git-cz": "^4.7.6",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  }
+}
