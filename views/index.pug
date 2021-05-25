@@ -1,6 +1,6 @@
 extends layout 
 block layout-content 
-  .view 
+  .view.welcome-view
     h1.banner WHATABYTE 
     .message 
       .title 
@@ -8,5 +8,9 @@ block layout-content
         h1 Food For Devs 
       span.details Access the WHATABYTE Team Portal 
     .nav-buttons 
-      a(href="/user")
-        .nav-button Just dive in!1
+      if isAuthenticated
+        a(href="/user")
+          .nav-button Just dive in!
+      else 
+        a(href="/login")
+          .nav-button Log In
